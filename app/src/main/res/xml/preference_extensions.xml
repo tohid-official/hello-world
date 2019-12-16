@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Extensions">
+        <Preference
+            android:key="extensions_list"
+            android:title="@string/extensions_list"/>
+        <Preference
+            android:key="uninstall_extension"
+            android:title="@string/uninstall_extension"/>
+        <Preference
+            android:summary="@string/extensions_description"
+            android:title="@string/extensions_store">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://cookiejarapps.com/extensions/">
+                <extra
+                    android:name="SOURCE"
+                    android:value="SELF" />
+            </intent>
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
